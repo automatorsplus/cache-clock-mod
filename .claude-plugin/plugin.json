@@ -1,0 +1,36 @@
+{
+  "name": "cache-clock",
+  "version": "1.0.0",
+  "description": "One live line above the prompt: minutes until the prompt cache goes cold, what re-caching would cost, context, limits and session cost.",
+  "author": {
+    "name": "Automators+",
+    "url": "https://github.com/automatorsplus"
+  },
+  "homepage": "https://github.com/automatorsplus/cache-clock-mod",
+  "repository": "https://github.com/automatorsplus/cache-clock-mod",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "mod",
+    "prompt-cache",
+    "cost",
+    "handoff"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "cacheMinutes": {
+      "type": "number",
+      "title": "Cache lifetime (minutes)",
+      "description": "How long your prompt cache lasts. 60 for a one-hour cache, 5 for a five-minute cache.",
+      "default": 60,
+      "min": 1,
+      "max": 60
+    },
+    "handoffFile": {
+      "type": "string",
+      "title": "Handoff file",
+      "description": "Where the Handoff button saves the note, relative to your project.",
+      "default": ".claude/handoff.md"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "cache-clock-mod",
+  "description": "Cache Clock, a Claude Code mod from the Automators+ community.",
+  "owner": {
+    "name": "Automators+",
+    "url": "https://github.com/automatorsplus"
+  },
+  "plugins": [
+    {
+      "name": "cache-clock",
+      "source": "./",
+      "description": "One live line above the prompt: minutes until the prompt cache goes cold, what re-caching would cost, context, limits and session cost.",
+      "version": "1.0.0"
+    }
+  ]
+}
